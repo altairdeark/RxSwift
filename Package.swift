@@ -50,7 +50,7 @@ let package = Package(
       .library(name: "RxBlocking", targets: ["RxBlocking"]),
       .library(name: "RxTest", targets: ["RxTest"]),
     ],
-    Product.allTests()
+//     Product.allTests()
   ] as [[Product]]).flatMap { $0 },
   targets: ([
     [
@@ -63,7 +63,7 @@ let package = Package(
       .target(name: "RxBlocking", dependencies: ["RxSwift"]),
       .target(name: "RxTest", dependencies: ["RxSwift"]),
     ],
-    Target.allTests()
+//     Target.allTests()
   ] as [[Target]]).flatMap { $0 },
   swiftLanguageVersions: [.v5]
 )
